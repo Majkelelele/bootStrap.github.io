@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Page</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- <header class="header">Header</header> -->
+        <!-- <aside class="sidebar">Menu</aside> -->
+        <aside class="sidebar">
+            <h1>Menu linków</h1>
+            <ul>
+                <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://usosweb.mimuw.edu.pl/kontroler.php?_action=news/default">USOSweb MIMUW</a></li>
+                <li><a href="https://www.goldmansachs.com/careers/students/programs/">goldmansachs</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="card">
+                <h1 class="card-title">Card with Shadow Effect</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida felis vitae consectetur pharetra. Nullam fermentum vestibulum felis, at tempus libero vestibulum nec.</p>
+            </div>
+            <div class="info">
+                <header>
+                    <h1>Beagles</h1>
+                    <time>08.12.2014</time>
+                </header>
+            </div>
+            
+            <section class="forecast">
+                <h1>Weather forecast for Seattle</h1>
+                <article class="day-forecast">
+                    <h2>03 March 2018</h2>
+                    <strong>03 March 2018</strong>
+                    <p>Rain.</p>
+                </article>
+            </section>
+            <div class="image">
+                <img src="https://source.unsplash.com/random/800x600" alt="Opis obrazka" class="animated-image">
+            </div>
+            <section class="test-results">
+                <h1>Wyniki Testów Pacjentów</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Pacjenta</th>
+                            <th>Wiek</th>
+                            <th>Płeć</th>
+                            <th>Wynik Testu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>45</td>
+                            <td>Mężczyzna</td>
+                            <td>Pozytywny</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="styled-table">
+                <h1>Lista Numerowana Cyframi Rzymskimi</h1>
+                <ol type="i">
+                    <li>Pierwszy element</li>
+                    <li>Drugi element</li>
+                    <li>Trzeci element</li>
+                    <li>Czwarty element</li>
+                </ol>
+            </section>
+            <section class="form">
+                <h1>Formularz</h1>
+                <form action="#" method="post">
+                    <label for="textInput">Pole Tekstowe:</label>
+                    <input type="text" id="textInput" name="textInput" required><br><br>
+                    
+                    <label for="selectInput">Pole Wyboru:</label>
+                    <select id="selectInput" name="selectInput">
+                        <optgroup label="Opcje Grupa 1">
+                            <option value="opcja1">Opcja 1</option>
+                            <option value="opcja2">Opcja 2</option>
+                            <option value="opcja3">Opcja 3</option>
+                        </optgroup>
+                        <optgroup label="Opcje Grupa 2">
+                            <option value="opcja4">Opcja 4</option>
+                            <option value="opcja5">Opcja 5</option>
+                            <option value="opcja6">Opcja 6</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </section>
+            <section class="additional-info">
+                <details>
+                    <summary>Kliknij, aby zobaczyć więcej informacji</summary>
+                    <p>Tutaj znajduje się dodatkowy opis, który będzie wyświetlany po kliknięciu na powyższy nagłówek. Możesz tutaj zawrzeć więcej szczegółowych informacji, które użytkownik może rozwijać lub zwijać w zależności od potrzeb.</p>
+                </details>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1024px-World_map_-_low_resolution.svg.png" alt="Mapa Świata" width="500" height="250" usemap="#worldmap" class="animated-image">
+                <map name="worldmap">
+                    <area shape="rect" coords="0,0,100,100" alt="Europa" href="https://pl.wikipedia.org/wiki/Europa">
+                    <area shape="circle" coords="175,100,25" alt="Ameryka Północna" href="https://pl.wikipedia.org/wiki/Ameryka_P%C3%B3%C5%82nocna">
+                    <area shape="polygon" coords="125,150,150,200,100,200" alt="Afryka" href="https://pl.wikipedia.org/wiki/Afryka">
+                </map>
+                <p>Zadanie zrobione w: <span id="progressValue">50%</span></p>
+                <progress id="progressBar" max="100" value="50"></progress>
+                <script>
+                    // Aktualizacja wartości paska postępu i wyświetlenie postępu w procentach
+                    var progress = document.getElementById("progressBar");
+                    var progressValue = document.getElementById("progressValue");
+
+                    progressValue.textContent = progress.value + "%";
+
+                    progress.addEventListener("input", function() {
+                        progressValue.textContent = progress.value + "%";
+                    });
+                </script>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2018 Gandalf</p>
+        </footer>
+    </div>
+</body>
+</html>
