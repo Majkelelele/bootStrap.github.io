@@ -40,9 +40,32 @@
         <option>Opcja 3</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Wyślij</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Wyślij</button>
   </form>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <div class="modal-header">
+                <h4 class="modal-title">Gratulacje!!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                kliknąłeś w przycisk!!!
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            </div>
+            
+        </div>
+    </div>
 </div>
+
+</div>
+
+
 
 <!-- Bootstrap JavaScript and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
