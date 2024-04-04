@@ -10,62 +10,74 @@
 <body>
 
 <div class="container mt-5">
-  <h2>Formularz</h2>
-  <form>
-    <div class="form-group">
-      <label for="text">Pole tekstowe:</label>
-      <input type="text" class="form-control" id="text" placeholder="Wpisz tekst">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="checkbox">
-      <label class="form-check-label" for="checkbox">Checkbox</label>
-    </div>
-    <div class="form-group">
-      <label>Opcje:</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-        <label class="form-check-label" for="option1">Opcja 1</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-        <label class="form-check-label" for="option2">Opcja 2</label>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Product Cart</h5>
+          <!-- Add your product items here -->
+          <p class="card-text">Product 1</p>
+          <p class="card-text">Product 2</p>
+          <p class="card-text">Product 3</p>
+        </div>
       </div>
     </div>
-    <div class="form-group">
-      <label for="select">Select:</label>
-      <select class="form-control" id="select">
-        <option>Wybierz opcję</option>
-        <option>Opcja 1</option>
-        <option>Opcja 2</option>
-        <option>Opcja 3</option>
-      </select>
-    </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Wyślij</button>
-  </form>
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        
-            <div class="modal-header">
-                <h4 class="modal-title">Gratulacje!!</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+    <div class="col-md-8">
+      <h2>Formularz</h2>
+      <form>
+        <div class="form-group">
+          <label for="text">Pole tekstowe:</label>
+          <input type="text" class="form-control" id="text" placeholder="Wpisz tekst">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox">
+          <label class="form-check-label" for="checkbox">Checkbox</label>
+        </div>
+        <div class="form-group">
+          <label>Opcje:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
+            <label class="form-check-label" for="option1">Opcja 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+            <label class="form-check-label" for="option2">Opcja 2</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="select">Select:</label>
+          <select class="form-control" id="select">
+            <option>Wybierz opcję</option>
+            <option>Opcja 1</option>
+            <option>Opcja 2</option>
+            <option>Opcja 3</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Wyślij</button>
+      </form>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
             
-            <div class="modal-body">
-                kliknąłeś w przycisk!!!
+                <div class="modal-header">
+                    <h4 class="modal-title">Gratulacje!!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <div class="modal-body">
+                    kliknąłeś w przycisk!!!
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                </div>
+                
             </div>
-            
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-            </div>
-            
         </div>
     </div>
+    </div>
+  </div>
 </div>
-
-</div>
-
-
 
 <!-- Bootstrap JavaScript and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -73,3 +85,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
